@@ -1,0 +1,41 @@
+{
+  "ReRoutes": [
+    {        
+      "DownstreamPathTemplate": "/api/v1/catalog/{catchAll}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8443
+        },
+        {
+          "Host": "localhost",
+          "Port": 8444
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/catalog/{catchAll}",
+      "LoadBalancer": "RoundRobin"
+    },
+    {        
+      "DownstreamPathTemplate": "/api/v1/orders/{catchAll}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8445
+        },
+        {
+          "Host": "localhost",
+          "Port": 8446
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/orders/{catchAll}",
+      "LoadBalancerOptions": {
+          "Type": "RoundRobin"
+      }
+    }        
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl" : "https://localhost:7000/"
+  }
+}

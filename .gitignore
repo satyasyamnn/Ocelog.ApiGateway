@@ -1,0 +1,43 @@
+
+#Ignore thumbnails created by Windows
+Thumbs.db
+#Ignore files built by Visual Studio
+*.obj
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+[Bb]in
+[Dd]ebug*/
+*.lib
+*.sbr
+obj/
+[Rr]elease*/
+_ReSharper*/
+[Tt]est[Rr]esult*
+.vs/
+#Nuget packages folder
+packages/
+/.vscode/launch.json
+/.vscode/solution-explorer/class.cs-template
+/.vscode/solution-explorer/class.ts-template
+/.vscode/solution-explorer/class.vb-template
+/.vscode/solution-explorer/default.ts-template
+/.vscode/solution-explorer/enum.cs-template
+/.vscode/solution-explorer/interface.cs-template
+/.vscode/solution-explorer/interface.ts-template
+/.vscode/solution-explorer/template-list.json
+/.vscode/solution-explorer/template-parameters.js
+/.vscode/tasks.json
